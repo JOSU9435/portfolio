@@ -39,8 +39,34 @@ export default {
         extrabold: 800,
         black: 900,
       },
+      animation: {
+        'text-fill': 'text-fill 1.5s cubic-bezier(.1,.5,.5,1) 1 forwards',
+        'fade-in-up': 'fade-in-up 0.6s cubic-bezier(0.4, 0, 0.6, 1) 1 forwards',
+      },
+      keyframes: {
+        'text-fill': {
+          '0%': {
+            backgroundSize: '0%', 
+          },
+          '100%': {
+            backgroundSize: '100%',
+          }
+        },
+        'fade-in-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(2rem)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          }
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+  ],
 }
 
