@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Leaf.",
+    "description": "Leaf is a Discord bot designed to play audio/music from YouTube in Discord voice channels. Leaf can play audio from any YouTube video using its URL and also search YouTube to play the first result when provided with a search string instead of a URL. Developed the bot using Node.js, leveraging discord.js for interacting with the Discord API and ytdl-core for streaming audio from YouTube.",
+    "teckstack": ["NodeJS", "discord.js", "ytdl-core"],
+    "image": "leaf.png",
+    "links": {
+      "gitHub": "https://github.com/JOSU9435/leaf",
+      "live": "https://ping-pong-josu.netlify.app/"
+    }
+  },
+  {
+    "title": "Ping-Pong Game.",
+    "description": "A server-authoritative online multiplayer browser ping pong game. Implemented the authoritative server using Node.js and utilized React.js for the frontend. Employed the Canvas API to render game graphics and Socket.io for real-time bidirectional communication.",
+    "teckstack": ["NodeJS", "Socket.io", "ReactJS", "canvas", "CSS"],
+    "image": "ping-pong.png",
+    "links": {
+      "gitHub": "https://github.com/JOSU9435/ping-pong",
+      "live": "https://discord.com/api/oauth2/authorize?client_id=977283052747231352&permissions=36826112&scope=bot"
+    }
+  },
+  {
+    "title": "All Contest",
+    "description": "A web scraper that aggregates programming contests from platforms like Codeforces, CodeChef, and AtCoder, creating a centralized platform for contest management and participation. Implemented the API using Express with TypeScript and integrated Puppeteer for web scraping. Utilized React for the frontend and containerized the API with Docker for hosting.",
+    "teckstack": ["TypeScript", "ExperssJS", "Docker", "puppeteer", "ReactJS"],
+    "image": "allcontest.png",
+    "links": {
+      "gitHub": "https://github.com/JOSU9435/contestScrapper",
+      "live": "https://allcontests.netlify.app/"
+    }
+  },
+  {
+    "title": "To Do List",
+    "description": "This project is a simple to-do list application built with HTML, CSS, and JavaScript. It enables users to add tasks, delete tasks, mark tasks as completed, and hide completed tasks. The app leverages localStorage to ensure that tasks persist across sessions, providing a seamless user experience.",
+    "teckstack": ["HTML", "CSS", "JavaScript"],
+    "image": "todo.png",
+    "links": {
+      "gitHub": "https://github.com/JOSU9435/to-do-list",
+      "live": "https://to-do-list-josu.netlify.app/"
+    }
+  }
+]

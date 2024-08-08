@@ -18,7 +18,7 @@ const Hero = () => {
           </svg>
         </div>
         <div className="bg-primary-100 my-12 mx-auto rounded-full h-60 w-60 overflow-hidden border-solid border-accent-100 md:w-80 md:h-80 [filter:url('#noise')]">
-          <img onLoad={animateFilter} className="saturate-50" src="/netrakamal-removebg.png" alt="" />
+          <img className="saturate-50" src="/netrakamal-removebg.png" alt="" />
         </div>
       </div>
 
@@ -41,7 +41,7 @@ const Hero = () => {
           </span>
         </div>
         <div
-          className="text-text-200 text-base text-opacity-80 my-4 translate-y-8 opacity-0 animate-fade-in-up delay-500 md:text-lg md:my-6"
+          className="text-text-200 text-base text-opacity-80 my-4 translate-y-8 opacity-0 animate-fade-in-up delay-450 md:text-lg md:my-6"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, voluptas magnam itaque illo ex, minima similique debitis qui porro dignissimos repudiandae. Natus repellat, nulla itaque possimus suscipit saepe atque ipsum, iste laboriosam
         </div>

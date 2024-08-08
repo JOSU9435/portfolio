@@ -28,6 +28,7 @@ export default {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
       },
       fontWeight: {
         thin: 100,
@@ -39,9 +40,19 @@ export default {
         extrabold: 800,
         black: 900,
       },
+      transitionDelay: {
+        '400': '400ms',
+        '600': '600ms',
+        '800': '800ms',
+        '900': '900ms',
+      },
+      animationDelay: {
+        '450': '450ms',
+      },
       animation: {
         'text-fill': 'text-fill 1.5s cubic-bezier(.1,.5,.5,1) 1 forwards',
         'fade-in-up': 'fade-in-up 0.6s cubic-bezier(0.4, 0, 0.6, 1) 1 forwards',
+        'pop-up': 'pop-up 0.5s cubic-bezier(.1,.5,.5,1) 1 forwards',
       },
       keyframes: {
         'text-fill': {
@@ -59,6 +70,14 @@ export default {
           },
           '100%': {
             opacity: '1',
+            transform: 'translateY(0)',
+          }
+        },
+        'pop-up': {
+          '0%': {
+            transform: 'translateY(100%)',
+          },
+          '100%': {
             transform: 'translateY(0)',
           }
         },
