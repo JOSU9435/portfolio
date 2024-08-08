@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div
-      className="bg-bg-100 min-h-[100vh] flex flex-col justify-center md:flex-row-reverse md:justify-evenly"
+      className="bg-bg-100 min-h-[100vh] flex flex-col justify-center md:flex-row-reverse md:justify-evenly md:mx-28"
     >
       <div className="mx-6 md:my-auto md:mx-12 animate-fade-in-up">
         <div className="absolute">
