@@ -1,19 +1,27 @@
+import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Socials = () => {
+
+  const [reveal, setReveal] = useState(false)
+
+  useEffect(() => {
+    setReveal(true)
+  },[])
+
   return (
     <div className="hidden xl:flex ml-8 fixed h-full flex-col gap-y-4 text-3xl text-text-200 items-center">
-      <a className="mt-auto duration-300 hover:text-accent-100 hover:-translate-y-1" href="https://github.com/JOSU9435/" target="_blank">
+      <a className={`mt-auto delay-600 duration-300 hover:text-accent-100 hover:-translate-y-1 ${reveal ? '-translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`} href="https://github.com/JOSU9435/" target="_blank">
         <FaGithub />
       </a>
-      <a className="duration-300 hover:text-accent-100 hover:-translate-y-1" href="https://www.linkedin.com/in/netrakamal-barua/" target="_blank">
+      <a className={`delay-500 duration-300 hover:text-accent-100 hover:-translate-y-1 ${reveal ? '-translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`} href="https://www.linkedin.com/in/netrakamal-barua/" target="_blank">
         <FaLinkedin />
       </a>
-      <a className="duration-300 hover:text-accent-100 hover:-translate-y-1" href="mailto:kamalnetra702@gmail.com" target="_blank">
+      <a className={`delay-400 duration-300 hover:text-accent-100 hover:-translate-y-1 ${reveal ? '-translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`} href="mailto:kamalnetra702@gmail.com" target="_blank">
         <MdEmail />
       </a>
-      <div className="bg-accent-100 w-0.5 h-72"></div>
+      <div className={`bg-accent-100 origin-bottom duration-500 w-0.5 h-72 ${reveal ? 'scale-100' : 'scale-0'}`}></div>
     </div>
   );
 }
