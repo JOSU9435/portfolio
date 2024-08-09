@@ -42,7 +42,7 @@ const Project = ({title, description, techstack, links, image} : Props) => {
           {description}
         </div>
       </div>
-      <div className="flex text-text-200 flex-wrap gap-x-3 text-base md:text-lg">
+      <div className="flex text-accent-100 flex-wrap gap-x-3 text-base md:text-lg">
         {techstack.map((tech, idx) => (
           // if techstack array has more items then add custom delays to acomodate it.
           <span key={idx} className={`duration-500 delay-${idx*100} ${reveal ? 'translate-x-0 opacity-100':'-translate-x-12 md:-translate-x-16 opacity-0'}`}>
