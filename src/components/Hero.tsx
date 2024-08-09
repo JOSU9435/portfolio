@@ -1,3 +1,5 @@
+import ExtLink from "./ExtLink";
+
 const Hero = () => {
   return (
     <div
@@ -44,6 +46,14 @@ const Hero = () => {
           className="text-text-200 text-base text-opacity-80 my-4 translate-y-8 opacity-0 animate-fade-in-up delay-450 md:text-lg md:my-6"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, voluptas magnam itaque illo ex, minima similique debitis qui porro dignissimos repudiandae. Natus repellat, nulla itaque possimus suscipit saepe atque ipsum, iste laboriosam
+        </div>
+
+        <div className="my-6">
+          <ExtLink
+            title="Resume"
+            href={import.meta.env.VITE_RESUME_LINK}
+            containerStyles="text-lg px-4"
+          />
         </div>
       </div>
     </div>

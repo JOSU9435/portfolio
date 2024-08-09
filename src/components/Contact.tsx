@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Button from "./Button";
+import ExtLink from "./ExtLink";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 
@@ -16,10 +16,6 @@ const Contact = () => {
     setReveal(prev => prev || inView)
   },[inView])
 
-  const openMail = () => {
-    window.open('mailto:kamalnetra702@gmail.com', '_blank')
-  }
-
   return (
     <div className="min-h-[100vh] flex flex-col items-center">
       <div ref={ref} className="my-auto flex flex-col gap-6 items-center md:gap-8">
@@ -30,9 +26,9 @@ const Contact = () => {
         <div className={`text-text-200 mx-4 duration-300 delay-150 text-center text-base md:text-lg md: max-w-lg ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed veniam, ullam ipsum quia consequuntur laborum eos minima perspiciatis ipsam.
         </div>
-        <Button
+        <ExtLink
           title={'Say Hi!'}
-          handleClick={openMail}
+          href={import.meta.env.VITE_MAIL_LINK}
           containerStyles={`md:text-lg delay-300 duration-300 ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
         />
       </div>
