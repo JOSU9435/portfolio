@@ -17,7 +17,7 @@ const Contact = () => {
   },[inView])
 
   return (
-    <div className="min-h-[100vh] flex flex-col items-center">
+    <div id="contact" className="min-h-[100vh] flex flex-col items-center">
       <div ref={ref} className="my-auto flex flex-col gap-6 items-center md:gap-8">
 
         <div className={`text-accent-200 text-3xl duration-300 font-semibold md:text-5xl ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>

@@ -38,19 +38,23 @@ const Nav = () => {
     >
       <Links 
         text={"About"} 
-        linkStyles={`duration-500 delay-0 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
-      />
-      <Links 
-        text={"Projects"} 
-        linkStyles={`duration-500 delay-100 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
+        href="#"
+        containerStyle={`duration-500 delay-0 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
       />
       <Links 
         text={"Experience"}
-        linkStyles={`duration-500 delay-200 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
+        href="#experience"
+        containerStyle={`duration-500 delay-100 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
       />
       <Links 
-        text={"Skills"}
-        linkStyles={`duration-500 delay-300 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
+        text={"Projects"} 
+        href="#projects"
+        containerStyle={`duration-500 delay-200 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
+      />
+      <Links 
+        text={"Contact"}
+        href="#contact"
+        containerStyle={`duration-500 delay-300 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
       />
     </div>
   );

@@ -15,6 +15,7 @@ const Projects = () => {
 
   return (
     <div
+      id="projects"
       className="min-h-[100vh] bg-bg-100 px-4 pt-20 md:max-w-6xl md:mx-auto"
     >
       <div
