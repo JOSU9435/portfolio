@@ -21,10 +21,10 @@ const Projects = () => {
       <div
         className="flex"
       >
-        <div className="text-text-100 text-3xl font-semibold relative overflow-hidden md:text-5xl">
-          <div ref={ref} className={`relative duration-500 ${reveal ? 'translate-y-0' : 'translate-y-full'}`}>PROJECTS</div>
+        <div className="text-text-200 text-3xl font-semibold relative overflow-hidden md:text-5xl">
+          <div ref={ref} className={`relative duration-300 ${reveal ? 'translate-y-0' : 'translate-y-full'}`}>PROJECTS</div>
         </div>
-        <div className={`flex-1 bg-accent-100 h-0.5 duration-500 origin-left rounded-full ml-2 my-auto ${inView ? 'scale-100' : 'scale-0'}`}></div>
+        <div className={`flex-1 bg-accent-100 h-0.5 duration-300 origin-left rounded-full ml-2 my-auto ${inView ? 'scale-100' : 'scale-0'}`}></div>
       </div>
 
       <div className="mt-12">

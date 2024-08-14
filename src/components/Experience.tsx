@@ -22,19 +22,19 @@ const Experience = ({company, designation, description, duration}: Props) => {
   },[inView])
 
   return (
-    <div ref={ref} className="h-5">
+    <div ref={ref}>
       <div className="text-lg text-accent-200 md:text-2xl overflow-hidden">
-        <div className={`relative duration-500 ${reveal ? 'translate-y-0' : 'translate-y-full'}`}>{designation}</div>
+        <div className={`relative duration-300 ${reveal ? 'translate-y-0' : 'translate-y-full'}`}>{designation}</div>
       </div>
       <div className="text-lg text-accent-100 font-semibold overflow-hidden md:text-2xl">
-        <div className={`relative delay-200 duration-500 ${reveal ? 'translate-y-0' : 'translate-y-full'}`}>
+        <div className={`relative delay-200 duration-300 ${reveal ? 'translate-y-0' : 'translate-y-full'}`}>
           @{company}
         </div>
       </div>
-      <div className={`text-sm text-text-200 mt-4 md:text-base duration-500 delay-400 ${reveal ? 'opacity-100' : 'opacity-0'}`}> 
+      <div className={`text-sm text-text-200 mt-4 md:text-base duration-300 delay-400 ${reveal ? 'opacity-100' : 'opacity-0'}`}> 
         {duration}
         </div>
-      <div className={`my-4 duration-500 delay-400 ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+      <div className={`my-4 duration-300 delay-400 ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
         {description.map((desc, idx) => (
           <div key={idx} className="flex my-2">
             <div>

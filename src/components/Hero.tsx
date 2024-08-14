@@ -3,9 +3,21 @@ import ExtLink from "./ExtLink";
 const Hero = () => {
   return (
     <div
-      className="bg-bg-100 min-h-[100vh] flex flex-col justify-center md:flex-row-reverse md:justify-evenly md:mx-28"
+      className="min-h-[100vh] flex flex-col justify-center md:flex-row-reverse md:justify-evenly md:mx-auto"
     >
-      <div className="mx-6 md:my-auto md:mx-12 animate-fade-in-up">
+      <div 
+        className="absolute -z-10 triangle rotate-45 h-10 w-10 top-[16%] left-[10%] bg-gradient-to-tr opacity-50 from-transparent from-0% to-accent-100 md:h-14 md:w-14 md:left-[15%]"
+      ></div>
+      <div 
+        className="absolute -z-10 triangle rotate-45 h-7 w-7 bottom-[15%] right-[12%] bg-gradient-to-tr opacity-50 from-transparent from-0% to-accent-100 md:h-10 md:w-10 md:bottom-[17%] md:right-[15%]"
+      ></div>
+      <div
+        className="absolute -z-10 top-[23%] right-[15%] h-20 w-20 rotate-45 rounded-lg bg-gradient-to-tr from-transparent from-10% to-bg-200 md:h-36 md:w-36 md:right-[25%]"
+      ></div>
+      <div
+        className="absolute -z-10 bottom-[8%] left-[12%] h-36 w-36 opacity-60 rounded-full bg-gradient-to-l from-transparent from-10% to-bg-200 md:h-48 md:w-48 md:left-[18%]"
+      ></div>
+      {/* <div className="mx-6 md:my-auto md:mx-12 animate-fade-in-up">
         <div className="absolute">
           <svg>
             <filter className="abosolute" id="noise" x='0%' y='0%' width='100%' height='100%'>
@@ -22,7 +34,7 @@ const Hero = () => {
         <div className="bg-primary-100 my-12 mx-auto rounded-full h-60 w-60 overflow-hidden border-solid border-accent-100 md:w-80 md:h-80 [filter:url('#noise')]">
           <img className="saturate-50" src="/netrakamal-removebg.png" alt="" />
         </div>
-      </div>
+      </div> */}
 
       <div className="mx-6 md:my-auto md:max-w-2xl">
         <div
@@ -43,16 +55,16 @@ const Hero = () => {
           </span>
         </div>
         <div
-          className="text-text-200 text-base text-opacity-80 my-4 translate-y-8 opacity-0 animate-fade-in-up delay-450 md:text-lg md:my-6"
+          className="text-text-200 text-sm text-opacity-70 my-4 translate-y-8 opacity-0 animate-fade-in-up delay-450 md:text-base md:my-8"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, voluptas magnam itaque illo ex, minima similique debitis qui porro dignissimos repudiandae. Natus repellat, nulla itaque possimus suscipit saepe atque ipsum, iste laboriosam
+          I am a software engineer and full-stack developer from Assam, India, with a degree in Computer Science and Engineering from NIT Silchar. I'm deeply passionate about development, having honed my skills through various projects, including web applications, games, and Discord bots. I have also gained valuable experience as an SDE intern at Amazon.
         </div>
 
-        <div className="my-6">
+        <div className="my-6 translate-y-8 opacity-0 animate-fade-in-up delay-600">
           <ExtLink
             title="Resume"
             href={import.meta.env.VITE_RESUME_LINK}
-            containerStyles="text-lg px-4"
+            containerStyles="text-base px-3 md:text-lg md:px-4"
           />
         </div>
       </div>
