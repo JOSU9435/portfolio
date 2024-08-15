@@ -26,11 +26,13 @@ const Contact = () => {
         <div className={`text-primary-300 mx-4 duration-300 delay-150 text-center text-base md:text-lg md: max-w-lg ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
           If you're interested in collaborating, discussing ideas, or just want to chat about the latest in tech, feel free to reach out!
         </div>
-        <ExtLink
-          title={'Say Hi!'}
-          href={import.meta.env.VITE_MAIL_LINK}
-          containerStyles={`md:text-lg delay-300 duration-300 ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
-        />
+        <div className={`delay-300 duration-300 ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+          <ExtLink
+            title={'Say Hi!'}
+            href={import.meta.env.VITE_MAIL_LINK}
+            containerStyles={`md:text-lg px-4`}
+          />
+        </div>
       </div>
       
       <div className="flex gap-x-8 text-3xl text-text-200 xl:hidden mb-8">
