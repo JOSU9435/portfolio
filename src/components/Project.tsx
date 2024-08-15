@@ -39,7 +39,7 @@ const Project = ({title, description, techstack, links, image} : Props) => {
           <img className="w-full h-full object-cover opacity-70 duration-300 hover:opacity-100" src={`/project-imgs/${image}`} alt="project" />
         </div>
         
-        <div className={`flex-1 bg-gradient-to-tl from-bg-200 to-bg-300 text-text-200 min-h-80 p-4 text-base font-light rounded-md duration-300 md:text-base md:min-h-48 md:relative ${reveal ? 'opacity-100 md:translate-x-0' : 'opacity-0 md:translate-x-32'}`}>
+        <div className={`flex-1 leading-7 bg-gradient-to-tl from-bg-200 to-bg-300 text-text-200 min-h-80 p-4 text-base font-light rounded-md duration-300 md:text-base md:min-h-48 md:relative ${reveal ? 'opacity-100 md:translate-x-0' : 'opacity-0 md:translate-x-32'}`}>
           {description}
         </div>
       </div>
