@@ -46,7 +46,7 @@ const Hero = () => {
         <div
           className="text-primary-300 text-sm my-4 translate-y-8 opacity-0 animate-fade-in-up delay-450 md:text-lg md:my-8"
         >
-          I am a software engineer and full-stack developer from Assam, India, with a degree in Computer Science and Engineering from NIT Silchar. I'm deeply passionate about development, 
+          I'm a passionate software engineer and full-stack developer from Assam, India, with a deep love for creating innovative and impactful solutions.
         </div>
 
         <div className="my-6 translate-y-8 opacity-0 animate-fade-in-up delay-600">

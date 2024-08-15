@@ -2,7 +2,7 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Experiences from "../components/Experiences";
 import Hero from "../components/Hero";
-import Projects from "./Projects";
+import Projects from "../components/Projects";
 
 const Home = () => {
   return (
