@@ -23,8 +23,8 @@ const Contact = () => {
         <div className={`text-accent-200 text-3xl duration-300 font-semibold md:text-5xl ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
           Get in Touch
         </div>
-        <div className={`text-text-200 mx-4 duration-300 delay-150 text-center text-base md:text-lg md: max-w-lg ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed veniam, ullam ipsum quia consequuntur laborum eos minima perspiciatis ipsam.
+        <div className={`text-primary-300 mx-4 duration-300 delay-150 text-center text-base md:text-lg md: max-w-lg ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+          If you're interested in collaborating, discussing ideas, or just want to chat about the latest in tech, feel free to reach out!
         </div>
         <ExtLink
           title={'Say Hi!'}

@@ -36,7 +36,7 @@ const Project = ({title, description, techstack, links, image} : Props) => {
       </div>
       <div className="md:flex md:items-center">
         <div className={`hidden md:bg-bg-200 md:block md:flex-1 md:h-80 md:mr-[-10%] duration-300 md:relative md:overflow-hidden ${reveal ? 'opacity-100 md:translate-x-0' : 'opacity-0 md:-translate-x-32'}`}>
-          <img className="w-full opacity-70 duration-300 hover:opacity-100" src={`/project-imgs/${image}`} alt="project" />
+          <img className="w-full h-full object-cover opacity-70 duration-300 hover:opacity-100" src={`/project-imgs/${image}`} alt="project" />
         </div>
         
         <div className={`flex-1 bg-gradient-to-tl from-bg-200 to-bg-300 text-text-200 min-h-80 p-4 text-base font-light rounded-md duration-300 md:text-base md:min-h-48 md:relative ${reveal ? 'opacity-100 md:translate-x-0' : 'opacity-0 md:translate-x-32'}`}>
