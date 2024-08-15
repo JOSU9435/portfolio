@@ -38,7 +38,7 @@ const Nav = () => {
     >
       <Links 
         text={"About"} 
-        href="#"
+        href="#about"
         containerStyle={`duration-500 delay-0 ${reveal && scrollUp ? 'translate-x-0 opacity-100': '-translate-x-4 opacity-0 md:-translate-x-8'}`}
       />
       <Links 
