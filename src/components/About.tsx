@@ -85,8 +85,8 @@ const About = () => {
         <div className={`flex-1 bg-accent-100 h-0.5 duration-300 origin-left rounded-full ml-2 my-auto ${inView ? 'scale-100' : 'scale-0'}`}></div>
       </div>
 
-      <div className="flex flex-col md:flex-row md:justify-between">
-        <div className="md:max-w-3xl md:mr-28">
+      <div className="flex flex-col lg:flex-row lg:justify-between">
+        <div className="lg:max-w-3xl lg:mr-28">
           <div className={`text-sm leading-relaxed text-text-200 mt-4 md:text-lg md:mt-8 md:leading-7 duration-300 delay-200 ${reveal ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             I'm a passionate software engineer and full-stack developer from Assam, India, with a deep love for creating innovative and impactful solutions. I graduated from NIT Silchar with a degree in Computer Science and Engineering, where I developed a strong foundation in coding, problem-solving, and software development.
           </div>
@@ -111,7 +111,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className={`overflow-hidden relative mx-auto max-w-64 max-h-64 rounded-lg mt-4 md:mt-8 md:m-0 md:max-h-fit duration-500 ease-in-out ${reveal ? 'opacity-100 translate-x-0' : 'opacity-0 translate-y-4'}`}>
+        <div className={`overflow-hidden relative mx-auto max-w-64 max-h-64 rounded-lg mt-4 lg:mt-8 lg:m-0 lg:max-h-fit duration-500 ease-in-out ${reveal ? 'opacity-100 translate-x-0' : 'opacity-0 translate-y-4'}`}>
           <img className="-mt-16 rounded-lg" src="/netrakamal-barua.jpg" alt="" />
         </div>
       </div>

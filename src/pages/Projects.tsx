@@ -27,7 +27,7 @@ const Projects = () => {
         <div className={`flex-1 bg-accent-100 h-0.5 duration-300 origin-left rounded-full ml-2 my-auto ${inView ? 'scale-100' : 'scale-0'}`}></div>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 overflow-hidden">
         {
           projects.map(((project, idx) => (
             <Project
