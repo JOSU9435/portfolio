@@ -54,6 +54,7 @@ export default {
         'fade-in-up': 'fade-in-up 0.6s cubic-bezier(0.4, 0, 0.6, 1) 1 forwards',
         'border-fill-tr': 'border-fill-tr 0.3s cubic-bezier(0.4, 0, 0.6, 1) 1 forwards',
         'border-fill-bl': 'border-fill-bl 0.3s cubic-bezier(0.4, 0, 0.6, 1) 1 forwards',
+        'loader': 'loader 0.2s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate',
       },
       keyframes: {
         'text-fill': {
@@ -62,6 +63,14 @@ export default {
           },
           '100%': {
             backgroundSize: '100%',
+          }
+        },
+        'loader': {
+          '0%': {
+            height: '0', 
+          },
+          '100%': {
+            height: '3rem',
           }
         },
         'fade-in-up': {
